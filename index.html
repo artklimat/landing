@@ -32,41 +32,41 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+ 
+  <nav class="navbar">
+    <div class="logo"><img src="/assets/logo.png" alt=""></div>
+    <ul class="nav-links">
+        <li><a href="#work-section">Как мы работаем</a></li>
+        <li><a href="#advantages-section">Преимущества</a></li>
+        <li><a href="#portfolio-section">Наши работы</a></li>
+        <li><a href="#reviews-section">Отзывы</a></li>
+        <li><a href="#footer">Контакты</a></li>
+    </ul>
+    <a href="#zayavka" class="btn call-btn">Заказать звонок</a>
+</nav>
+
+<nav class="navbar-mobile">
+    <div class="logo"><img src="/assets/logo.png" alt=""></div>
+    <div class="mobile-actions">
+        <a href="#zayavka" class="btn call-btn call-btn-mobile">Заказать звонок</a>
+        <button class="menu-burger" aria-label="Открыть меню"><span></span></button>
+    </div>
+    <ul class="nav-links-mobile">
+        <li><a href="#work-section">Как мы работаем</a></li>
+        <li><a href="#advantages-section">Преимущества</a></li>
+        <li><a href="#portfolio-section">Наши работы</a></li>
+        <li><a href="#reviews-section">Отзывы</a></li>
+        <li><a href="#footer">Контакты</a></li>
+    </ul>
+</nav>
     <section class="hero">
-        <nav class="navbar">
-            <div class="logo"><img src="/assets/logo.png" alt=""></div>
-            <ul class="nav-links">
-                <li><a href="#work-section">Как мы работаем</a></li>
-                <li><a href="#advantages-section">Преимущества</a></li>
-                <li><a href="#portfolio-section">Наши работы</a></li>
-                <li><a href="#reviews-section">Отзывы</a></li>
-                <li><a href="#footer">Контакты</a></li>
-            </ul>
-            <a href="#zayavka" class="btn call-btn">Заказать звонок</a>
-        </nav>
         
-        <nav class="navbar-mobile">
-            <div class="logo"><img src="/assets/logo.png" alt=""></div>
-            <div class="mobile-actions">
-                <a href="#zayavka" class="btn call-btn call-btn-mobile">Заказать звонок</a>
-                <button class="menu-burger" aria-label="Открыть меню"><span></span></button>
-            </div>
-            <ul class="nav-links-mobile">
-                <li><a href="#work-section">Как мы работаем</a></li>
-                <li><a href="#advantages-section">Преимущества</a></li>
-                <li><a href="#portfolio-section">Наши работы</a></li>
-                <li><a href="#reviews-section">Отзывы</a></li>
-                <li><a href="#footer">Контакты</a></li>
-            </ul>
-        </nav>
         <div class="hero-content">
-            <h1>Профессиональная установка и обслуживание климатического оборудования</h1>
-            <a href="#zayavka" class="btn main-btn">Оставить заявку <img src="/assets/Arrow 1.png" alt="" class="arrow"></a>
+          <h1 class="blurred-text" data-text="Профессиональная установка и обслуживание климатического оборудования">Профессиональная установка и обслуживание климатического оборудования</h1>
+          <a href="#zayavka" class="btn main-btn">Оставить заявку <img src="/assets/Arrow 1 (2).png" alt="" class="arrow"></a>
         </div>
         <img src="/assets/light.png" alt="" class="light">
-        <div class="hero-image">
-            <img src="assets/air.png" alt="Кондиционер">
-        </div>
+        
         <img src="assets/leaf1.png" class="leaf leaf1" alt="">
         <img src="assets/leaf2.png" class="leaf leaf2" alt="">
         <img src="assets/leaf3.png" class="leaf leaf3" alt="">
@@ -114,7 +114,8 @@
         <div class="work-card fade-scroll">
           <div class="work-card__info">
             <div class="work-number">3</div>
-            <p>Подбор кондиционера<br>и согласование</p>
+            <p>Подбор оборудования<br>
+              и согласование проекта</p>
           </div>
           <img src="assets/step3.png" alt="Подбор">
         </div>
@@ -339,38 +340,35 @@
       </div>
     </section>
 
-    <footer class="footer fade-scroll" id="footer" style="margin-top: 200px;">
-  <div class="footer-top">
-    <div class="footer-left">
-      <div class="footer-logo">
-        <img src="/assets/logo-wh.png" alt="">
+    <footer class="footer fade-scroll bg-footer" id="footer" style="margin-top: 200px; ">
+      
+      <div class="info-glass-left">
+        <div class="info-logo"><img src="/assets/logo.png" alt="АРТКЛИМАТ"></div>
+        <div class="info-contacts">
+          <div class="info-phone"><a href="tel:+79175495966">+7 (917) 549-59-66</a></div>
+          <div class="info-mail"><a href="mailto:info@artklimat.ru">info@artklimat.ru</a></div>
+          <div class="info-address">108811, г Москва, поселение Внуковское, ул. Анны Ахматовой, д.16, этаж 1 пом. VII</div>
+        </div>
       </div>
-      <div class="footer-contacts">
-        <div><a href="tel:+79175495966" class="tel-a">+7 (917) 549-59-66</a></div>
-        <div>info@artklimat.ru</div>
-        <div>108811, г Москва, поселение Внуковское, ул. Анны Ахматовой, д.16, этаж 1 пом. VII</div>
+      <div class="info-glass-right">
+        <div class="info-social-row">
+          <a href="https://wa.me/79175495966" class="wa-btn"><img src="assets/whatsapp (1) 1 (1).png" alt=""> WhatsApp</a> 
+          <a href="#" class="tg-btn"><img src="assets/tg.png" alt=""> Telegram</a>
+        </div>
+        <nav class="info-nav">
+          <a href="#work-section">Как мы работаем</a>
+          <a href="#advantages-section">Преимущества</a>
+          <a href="#portfolio-section">Наши работы</a>
+          <a href="#reviews-section">Отзывы</a>
+        </nav>
       </div>
-    </div>
-    <div class="footer-menu-social-wrap">
-      <nav class="footer-nav">
-        <a href="#work-section">Как мы работаем</a>
-        <a href="#advantages-section">Преимущества</a>
-        <a href="#portfolio-section">Наши работы</a>
-        <a href="#reviews-section">Отзывы</a>
-        <a href="#footer">Контакты</a>
-      </nav>
-      <div class="footer-social">
-        <a href="https://wa.me/79175495966" class="wa-btn"><img src="assets/whatsapp (1) 1 (1).png" alt=""> WhatsApp</a>
-        <a href="#" class="tg-btn"><img src="assets/tg.png" alt=""> Telegram</a>
-      </div>
-    </div>
-  </div>
-  <hr class="footer-divider">
+      <hr class="footer-divider">
   <div class="footer-bottom">
     <div>ООО &quot;КЛИМВЕНТТЕХ&quot;<br>ИНН 7751239740<br>Политика конфиденциальности</div>
   </div>
-</footer>
+    </footer>
     
     <script src="script.js"></script>
+    
 </body>
 </html>
